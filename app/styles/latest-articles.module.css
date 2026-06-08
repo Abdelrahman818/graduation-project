@@ -1,0 +1,68 @@
+.articlesSection {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.caption {
+  width: max-content;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.title {
+  width: max-content;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  font-family: var(--titles-font);
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.articleCover {
+  margin-bottom: 20px;
+}
+
+.date {
+  color: var(--beige);
+  font-family: var(--titles-font);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.articleName {
+  text-transform: capitalize;
+  font-family: var(--titles-font);
+  font-size: 1.8rem;
+  color: var(--black);
+  margin: 15px 0;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+  margin-bottom: 15px;
+}
+
+.articleCategory {
+  text-transform: uppercase;
+}
+
+.allArticles {
+  padding: 10px;
+  width: max-content;
+  margin: auto;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  text-transform: uppercase;
+}

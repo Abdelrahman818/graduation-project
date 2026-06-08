@@ -1,0 +1,71 @@
+.bg {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 40vh;
+  background-color: var(--section-background);
+  z-index: -1;
+}
+
+.caption {
+  padding-top: 1rem;
+  width: max-content;
+  margin: auto;
+  text-transform: capitalize;
+}
+
+.title {
+  width: max-content;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-family: var(--titles-font);
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookCover {
+  background-color: var(--body-bg-color);
+}
+
+.bookName {
+  font-size: 1.7rem;
+  font-family: var(--titles-font);
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.author {
+  font-size: 20px;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.price {
+  display: flex;
+  gap: 15px;
+}
+
+.original {
+  text-decoration: line-through;
+  font-family: var(--titles-font);
+}
+
+.currPrice {
+  font-size: 1.5rem;
+  font-family: var(--titles-font);
+  color: var(--beige);
+}

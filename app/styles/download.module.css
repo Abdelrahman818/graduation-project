@@ -1,0 +1,78 @@
+.downloadSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  height: 90vh;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 90vh;
+  background-color: var(--section-background);
+  z-index: -1;
+  background-image: url(@/assets/backgrounds/bgDownloadApp.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.phone {
+  background-image: url(@/assets/other/phone.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 50%;
+  margin-left: 15%;
+}
+
+.info {
+  width: fit-content;
+}
+
+.title {
+  width: max-content;
+  font-size: 3rem;
+  font-family: var(--titles-font);
+  text-transform: capitalize;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+
+.underline {
+  background-image: url(@/assets/other/underline.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 30px;
+}
+
+.disc {
+  line-height: 35px;
+}
+
+.play {
+  background-image: url(@/assets/other/googlePlay.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 130px;
+  cursor: pointer;
+}
+
+.store {
+  background-image: url(@/assets/other/appStore.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 120px;
+  cursor: pointer;
+}

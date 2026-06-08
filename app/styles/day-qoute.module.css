@@ -1,0 +1,33 @@
+.title {
+  width: max-content;
+  margin: auto;
+  font-size: 2rem;
+  font-family: var(--titles-font);
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.underline {
+  background-image: url(@/assets/other/underline.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 30px;
+  margin: auto;
+}
+
+.quote {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 3rem;
+  font-size: 18px;
+}
+
+.author {
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: var(--black);
+}

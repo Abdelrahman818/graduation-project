@@ -1,0 +1,55 @@
+.addNewRental {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  background-color: var(--circle-color);
+  padding: 15px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000;
+}
+
+.panelCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--circle-color);
+  padding: 15px 20px;
+  padding-top: 30px;
+  border-radius: 5px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.inputField {
+  background-color: var(--section-background);
+  border-bottom: 1px solid var(--border-color);
+  width: 300px;
+  height: 40px;
+  padding-left: 15px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btns {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: var(--section-background);
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}

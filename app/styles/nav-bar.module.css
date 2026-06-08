@@ -1,0 +1,33 @@
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.logo {
+  background-image: url(../../assets/favicon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 50px;
+}
+
+.navagation {
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.navagation li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navagation li a:hover {
+  color: var(--primary-color, #7bbdff);
+}

@@ -1,0 +1,68 @@
+.footerCont {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.logo {
+  position: relative;
+  left: -70px;
+  width: 200px;
+  height: 60px;
+  background-image: url(@/assets/favicon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: var(--titles-font);
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  gap: 1rem;
+}
+
+.links li {
+  cursor: pointer;
+}
+
+.footerBottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.separator {
+  position: absolute;
+  bottom: 40px;
+  left: -10%;
+  width: 120%;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.facebookIcon,
+.instagramIcon,
+.linkedinIcon,
+.twitterIcon,
+.accountIcon,
+.cartIcon,
+.searchIcon {
+  width: 16px;
+  height: 16px;
+  color: var(--grey);
+}

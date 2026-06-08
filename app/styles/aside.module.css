@@ -1,0 +1,35 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 15%;
+  height: 100vh;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  color: var(--dark);
+  text-transform: capitalize;
+  border-right: 1px solid var(--border-color);
+}
+
+.users,
+.rentals,
+.books {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.users {
+  background-image: url(@/assets/icons/users.png);
+}
+
+.books {
+  background-image: url(@/assets/icons/books.png)
+}
+
+.rentals {
+  background-image: url(@/assets/icons/rentals.png)
+}

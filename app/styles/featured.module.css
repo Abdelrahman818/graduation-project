@@ -1,0 +1,81 @@
+.caption {
+  width: max-content;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 2rem 0;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.title {
+  width: max-content;
+  margin: auto;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  font-family: var(--titles-font);
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.rightLine {
+  position: absolute;
+  width: calc(50% - 200px);
+  top: 50%;
+  right: 0;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.leftLine {
+  position: absolute;
+  width: calc(50% - 200px);
+  top: 50%;
+  left: 0;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.bookCard {
+  padding: 20px 15px;
+  background-color: var(--img-background);
+}
+
+.bookDisc {
+  text-align: center;
+}
+
+.bookName {
+  text-transform: capitalize;
+  color: var(--beige);
+  font-size: 1.4rem;
+  font-family: var(--titles-font);
+}
+
+.author {
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.price {
+  margin-top: 10px;
+  color: var(--beige);
+  font-family: var(--titles-font);
+  font-size: 25px;
+}
+
+.selections {
+  margin: auto;
+  width: max-content;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: var(--circle-color);
+  border-radius: 50%;
+}

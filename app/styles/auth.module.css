@@ -1,0 +1,202 @@
+.login,
+.signup {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 10%;
+  padding-top: 2rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.loginBtn,
+.signupBtn {
+  padding: 10px 2rem;
+  font-size: 20px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.loginBtn:hover,
+.signupBtn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transform: scale(1.05);
+}
+
+.logo {
+  background-image: url(@/assets/favicon.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 50px;
+  animation: slideInLeft 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.title {
+  font-size: 5rem;
+  font-family: var(--titles-font);
+  text-transform: capitalize;
+  color: var(--black);
+  width: 35rem;
+  margin-top: 5rem;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.loginText {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
+  animation: slideInLeft 1s ease-out;
+}
+
+.formCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: slideInUp 1.2s ease-out;
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 1.5rem;
+  width: max-content;
+  margin-bottom: 24px;
+}
+
+.inputField {
+  background-color: var(--section-background);
+  border-bottom: 1px solid var(--border-color);
+  width: 350px;
+  height: 45px;
+  padding-left: 15px;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputField:focus {
+  border-bottom: 2px solid var(--black);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.otherOptions {
+  width: max-content;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+.otherOptions:hover {
+  color: var(--primary-color);
+}
+
+.rightSide {
+  background-image: url(@/assets/other/books.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  align-self: center;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.errorBox {
+  color: #ff4d4d;
+  background-color: #ffe6e6;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 10px;
+  border-left: 4px solid #ff4d4d;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 2rem;
+  font-size: 18px;
+  border: 1px solid var(--border-color);
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 350px;
+  margin-top: 10px;
+}
+
+.googleBtn:hover {
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.googleIcon {
+  width: 20px;
+  height: 20px;
+  background-image: url('https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  width: 350px;
+  color: #888;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.divider:not(:empty)::before {
+  margin-right: .5em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: .5em;
+}

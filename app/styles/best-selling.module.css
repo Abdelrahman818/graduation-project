@@ -1,0 +1,78 @@
+.bestSelling {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--img-background);
+  background-image: url('@/assets/backgrounds/bestSelling.png');
+  z-index: -1;
+}
+
+.bookInfo {
+  width: 50%;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: var(--titles-font);
+  text-transform: capitalize;
+  color: var(--black);
+  width: max-content;
+}
+
+.underline {
+  background-image: url(@/assets/other/underline.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7px;
+  width: 50px;
+}
+
+.author {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.bookName {
+  width: max-content;
+  font-size: 2rem;
+  color: var(--black);
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  font-family: var(--titles-font);
+}
+
+.bookDisc {
+  width: 70%;
+}
+
+.price {
+  color: var(--beige);
+  font-family: var(--titles-font);
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: max-content;
+}
+
+.buyBtn {
+  padding: 10px;
+  width: max-content;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+}
